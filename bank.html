@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inner page of bank</title>
+    <!-- tailwind link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-5  p-3 font-semibold">Let's get some <span
+                class="text-orange-700">MONEY</span>!!!</h1>
+
+    </header>
+    <main>
+        <section class="w-9/12 mx-auto mt-12">
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-indigo-600 rounded-lg">
+                    <h3 class="text-white text-3xl p-3 text-center font-semibold">Diposit</h3>
+                    <h2  class="text-white text-3xl  pb-10 text-center font-semibold">$<span id="total-deposit">00</span></h2>
+                </div>
+                <div class="bg-green-600 rounded-lg">
+                    <h3 class="text-white text-3xl p-3 text-center font-semibold">withdraw</h3>
+                    <h2 class="text-white text-3xl  pb-10 text-center font-semibold">$00</h2>
+                </div>
+                <div class="bg-lime-600 rounded-lg">
+                    <h3 class="text-white text-3xl p-3 text-center font-semibold">Balance</h3>
+                    <h2 class="text-white text-3xl  pb-10 text-center font-semibold">$<span id="total-balance">1000</span></h2>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- withdraw and Diposit field  -->
+
+        <section class="w-9/12 mx-auto mt-12">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-rose-500 rounded-lg">
+                    <h3 class="text-white text-3xl p-3  font-semibold">Please Diposit</h3>
+                    <input class="w-9/12 inline-block mb-3 p-1 m-3" placeholder="$Amount you want to diposit"
+                        type="text" name="" id="deposit-amount">
+                    <button id="btn-diposit"
+                        class="block bg-indigo-600 px-5 py-2 rounded-lg hover:bg-blue-400 m-3 text-white">diposit</button>
+                </div>
+                <div class="bg-fuchsia-500 rounded-lg">
+                    <h3 class="text-white text-3xl p-3  font-semibold">Please withdraw</h3>
+                    <input class="w-9/12 inline-block mb-3 p-1 m-3" placeholder="$Amount you want to withdraw"
+                        type="email" name="" id="user-email">
+                    <button id="btn-withdraw"
+                        class="block bg-green-600 px-5 py-2 rounded-lg hover:bg-blue-400 m-3 text-white">withdraw</button>
+                    
+                </div>
+
+            </div>
+        </section>
+    </main>
+<script src="bank.js"></script>
+</body>
+
+</html>
